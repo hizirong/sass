@@ -1,0 +1,23 @@
+.footer h3 {
+  font-style: initial;
+  border: 3px solid blue; }
+
+.nav {
+  background-color: #ffc966; }
+  .nav ul li {
+    list-style: none; }
+    .nav ul li a {
+      text-decoration: none;
+      font-size: 20px;
+      color: gray; }
+      .nav ul li a:hover {
+        color: royalblue; }
+
+h1, .footer h3 {
+  color: orange;
+  font-stretch: 40px;
+  background-color: gray;
+  text-align: center; }
+
+h1:hover, .footer h3:hover {
+  background-color: green; }
