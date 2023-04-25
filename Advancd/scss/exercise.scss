@@ -1,0 +1,62 @@
+// Numbers
+.numbers {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 20px; //rem, em, %
+}
+
+// Strings
+.strings {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+// Colors
+.colors {
+    color: red;
+    background-color: #ff0000;
+    border-color: rgb(255, 0, 123); //rgba(255,0,123, .5)
+    outline-color: hsl(0, 100%, 50%);
+
+}
+
+// Lists
+.list {
+    margin: 10px 15px 5px 20px;
+    font-family: 'Raleway', 'Dosis', 'Lato';
+    border: 1px solid red;
+}
+
+// Maps
+$colors: (
+    primary:red,
+    2:green,
+    tertiary:blue
+);
+
+h1 {
+    color: map-get($colors, primary);
+    background-color: map-get($colors, 2);
+}
+
+// Booleans
+// True or False
+
+//null
+
+
+// 插值
+$b: "border";
+$c: "color";
+
+h2 {
+    //box-sizing: border-box;
+    box-sizing: #{$b}-box;
+
+    //border: 1px solid blue;
+    #{$b}: 1px solid blue;
+
+    #{$c}: red;
+    background-color: green;
+}
